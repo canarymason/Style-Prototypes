@@ -3,5 +3,5 @@ dist
 .tmp
 .sass-cache
 app/components
-
+npm-debug.log
 /_server/Gemfile.lock
