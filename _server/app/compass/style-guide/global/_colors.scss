@@ -4,7 +4,8 @@
 // We can utalize [Color Schemer](https://github.com/scottkellum/color-schemer)
 //   to build us awesome color guides.
 //////////////////////////////
-$cs-primary:            #c0ff33;
+$cs-primary:            #f08c49;
+$cs-secondary:            #13999d;
 // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
 $cs-scheme:             accented-analogic;
 // Options: mono, complement, triad, tetrad, analogic, accented-analogic
@@ -19,6 +20,9 @@ $cs-color-model:        ryb;
 
 $black:     tint-stack(#333);
 $primary:   tint-stack(cs-primary());
-$secondary: tint-stack(cs-secondary());
-$tertiary:  tint-stack(cs-tertiary());
-$quadrary:  tint-stack(cs-quadrary());
+$secondary: tint-stack($cs-secondary);
+// $secondary: tint-stack(cs-secondary());
+// $tertiary:  tint-stack(cs-tertiary());
+$tertiary:  tint-stack(#666464);
+// $quadrary:  tint-stack(cs-quadrary());
+$quadrary:  tint-stack(#f7fcfc);
