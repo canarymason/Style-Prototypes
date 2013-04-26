@@ -8,6 +8,7 @@ require 'compass-normalize'
 require 'sassy-buttons'
 require 'color-schemer'
 require 'modular-scale'
+require 'survivalkit'
 
 # This tells Compass what your Compass extension is called, and where to find
 #  its files
