@@ -2,6 +2,15 @@
 // If you're using SMACSS, this is where module, state and theme styles go
 // SITE-WIDE DESIGN -------------------------------------------------------------- */
 
+// .page-wrapper {
+//   @include baseline-grid-background();
+//   border-top: 1px solid red;
+// }
+
+.main-nav {
+  padding: $base-line-height 0;
+}
+
 .client-name {
   color: $orange;
   border-bottom: 1px solid $orange;
@@ -11,7 +20,8 @@
 
 .page-wrapper {
   max-width: 1000px;
-  margin: 0 auto
+  margin: 0 auto $base-line-height;
+  clear: both;
 }
 
 
@@ -26,6 +36,7 @@ img {
 
 .page-title {
   position: relative;
+  margin-bottom: calc-em(50px, nth($header-sizes, 1));
   &:after {
     content: $space;
     display: block;

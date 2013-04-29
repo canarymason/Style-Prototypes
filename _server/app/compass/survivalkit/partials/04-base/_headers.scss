@@ -4,8 +4,7 @@
   @extend %headers;
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  letter-spacing: .05em;
-  margin: .5em 0;
+  // letter-spacing: .05em;
 }
 
 %h1 {
@@ -20,7 +19,8 @@
   &:not(.client-name) {
     color: $white;
     background-color: $orange;
-    padding: 0.5em 0 0.5em 0.5em;
+    $vert-padding: calc-em($base-font-size, nth($header-sizes, 1));
+    padding: $vert-padding 0 $vert-padding 0.5em;
     margin-left: -0.5em;
   }
 }

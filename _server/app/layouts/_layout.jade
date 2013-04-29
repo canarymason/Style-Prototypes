@@ -37,18 +37,14 @@ html.no-js(lang='#{language}')
       div(class='content-wrapper')
         block header
     #design-header(class='page-wrapper')
-      div(class='content-wrapper')
-        mixin design-header
+      mixin design-header
     #nav(class='page-wrapper')
-      div(class='content-wrapper')
-        mixin nav
-        block nav
+      mixin nav
+      block nav
     #main(class='page-wrapper')
-      div(class='content-wrapper')
-        block content
+      block content
     #footer(class='page-wrapper')
-      div(class='content-wrapper')
-        block footer
+      block footer
 
     each script in scriptsFooter
       script(src=script)

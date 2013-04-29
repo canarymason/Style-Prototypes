@@ -5,7 +5,7 @@
 // Pick a reset or normalization
 // accepted values: 'meyer' (default), 'normalize', false
 // choose to reset header sizes (applies to 'normalize' only)
-$init-headers: false;
+$init-headers: true;
 $init-type: normalize;
 // use [Formalize](http://formalize.me/)
 $formalize: false;
@@ -26,7 +26,8 @@ $base-line-height: $base-font-size * 1.5;
 $ratio: augmented_fourth();
 $base-size: $base-font-size 44px;
 // @include ms-list;
-$base-line-height: ms(2);
+// $base-line-height: ms(2);
+$base-line-height: 26px;
 
 // Dimensions
 // basic values, independant of any css framework
