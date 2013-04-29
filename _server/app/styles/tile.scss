@@ -1,5 +1,6 @@
 @import "layout";
-@import "../compass/style-guide/global/base";
+// @import "../compass/style-guide/global/base";
+@import "../compass/survivalkit/style";
 
 //////////////////////////////
 // Style Tile
@@ -51,13 +52,19 @@
 
     border: 3px solid desaturate($header-color, 50%);
 
-    @include border-radius(5px);
-    @include box-shadow(0px 0px 2px black, 0px 0px 2px black inset);
+    // @include border-radius(5px);
+    // @include box-shadow(0px 0px 2px black, 0px 0px 2px black inset);
 
     margin: {
       left: .25em;
       bottom: .25em;
     }
+  }
+}
+
+.colors {
+  li {
+    border-radius: 50%;
   }
 }
 
@@ -89,7 +96,7 @@
 
 .inspiration {
   @include horizontal-list;
-  font-size: 3em;
+  // font-size: 3em;
   text-align: center;
 }
 

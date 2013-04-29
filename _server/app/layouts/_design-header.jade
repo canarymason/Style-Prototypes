@@ -1,0 +1,7 @@
+mixin design-header(title)
+  header#client-id
+    - if (clientLogo)
+      div.client-logo
+        img(src="#{clientLogo}", alt="#{clientName}")
+    - else
+        h1.client-name #{clientName}

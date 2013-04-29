@@ -17,7 +17,12 @@
       font-size: nth($header-sizes, 1);
     }
   }
-  text-transform: uppercase;
+  &:not(.client-name) {
+    color: $white;
+    background-color: $orange;
+    padding: 0.5em 0 0.5em 0.5em;
+    margin-left: -0.5em;
+  }
 }
 
 %h2 {
@@ -29,7 +34,8 @@
       font-size: nth($header-sizes, 1);
     }
   }
-  text-transform: uppercase;
+  color: $blue;
+  border-bottom: 1px solid $blue;
 }
 
 %h3 {
@@ -41,6 +47,7 @@
       font-size: nth($header-sizes, 1);
     }
   }
+  color: $orange;
 }
 
 %h4 {
@@ -52,6 +59,7 @@
       font-size: nth($header-sizes, 1);
     }
   }
+  color: $gray-light;
 }
 
 %h5 {
@@ -63,6 +71,7 @@
       font-size: nth($header-sizes, 1);
     }
   }
+  color: $gray-light;
 }
 
 %h6 {
@@ -74,6 +83,7 @@
       font-size: nth($header-sizes, 1);
     }
   }
+  color: $gray-light;
 }
 
 h1 {

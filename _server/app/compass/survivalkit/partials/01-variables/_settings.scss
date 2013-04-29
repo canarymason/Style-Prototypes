@@ -15,14 +15,18 @@ $formalize: false;
 $pixel-normalize: false;
 
 // Font size and line-height
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: $base-font-size * 1.5;
 
 // Modular Scale (used by 04-base)
 // values used to determine modular scale values
 // and http://modularscale.com/
-// $ratio: golden_ratio() major_third();
+// $ratio: golden_ratio() augmented_fourth();
 // $base-size: $base-font-size;
+$ratio: augmented_fourth();
+$base-size: $base-font-size 44px;
+// @include ms-list;
+$base-line-height: ms(2);
 
 // Dimensions
 // basic values, independant of any css framework
@@ -39,10 +43,10 @@ $establish-baseline: true;
 
 // Headers
 // create a list of header sizes, H1 - H6
-$set-header-sizes: false;
-$header-sizes: 1em 1em 1em 1em 1em 1em;
+$set-header-sizes: true;
+$header-sizes: ms(7) ms(6) ms(5) ms(3) ms(2) ms(1);
 // Use Compass's adjust-font-size-to function
-$adjust-font-size-to: false;
+$adjust-font-size-to: true;
 // fancy apersands - for .amp within headers
 $header-ampersands: false;
 

@@ -6,6 +6,8 @@ $gray-light         : #878785;
 $gray-med           : #3d3d3d;
 $gray-dark          : #2d2d2d;
 $white              : white;
+$warm-white         : mix($white, $orange, 90%);
+$cool-white         : mix($white, $blue, 99%);
 
 
 
@@ -16,7 +18,7 @@ $white              : white;
 $base-color: $white;
 $text-color: $black;
 $alt-color: $blue;
-$background-color: $white;
+$background-color: $cool-white;
 $border-color: $gray-light;
 
 

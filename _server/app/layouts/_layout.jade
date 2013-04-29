@@ -5,6 +5,7 @@ include ../setup/webfonts
 include ../setup/colors/colors
 
 include _header
+include _design-header
 include _nav
 include _webfonts
 
@@ -35,6 +36,9 @@ html.no-js(lang='#{language}')
     #prototype-header(class='page-wrapper')
       div(class='content-wrapper')
         block header
+    #design-header(class='page-wrapper')
+      div(class='content-wrapper')
+        mixin design-header
     #nav(class='page-wrapper')
       div(class='content-wrapper')
         mixin nav

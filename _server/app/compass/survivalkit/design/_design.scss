@@ -2,3 +2,38 @@
 // If you're using SMACSS, this is where module, state and theme styles go
 // SITE-WIDE DESIGN -------------------------------------------------------------- */
 
+.client-name {
+  color: $orange;
+  border-bottom: 1px solid $orange;
+  display: inline-block;
+  padding-bottom: 0.125em;
+}
+
+.page-wrapper {
+  max-width: 1000px;
+  margin: 0 auto
+}
+
+
+.image-right {
+  float: right;
+  margin: 0 0 0.5em 0.5em;
+}
+
+img {
+  border: 1px solid $gray-med;
+}
+
+.page-title {
+  position: relative;
+  &:after {
+    content: $space;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0.25em;
+    border-width: 0.5em 0.5em 0 0.5em;
+    border-style: solid;
+    border-color: $orange transparent transparent transparent;
+  }
+}
